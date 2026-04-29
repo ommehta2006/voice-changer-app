@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎙️ Voice Changer"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Real-time Voice Disguise for Calls"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select voice and tap START"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:background="#E8F5E9"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Voice Selection -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Voice Effect:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="15dp" />
+
+    <RadioGroup
+        android:id="@+id/voiceTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <RadioButton
+            android:id="@+id/radioRobot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🤖 Robot Voice"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#FFF"
+            android:layout_marginBottom="10dp" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👩 Female Voice"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#FFF"
+            android:layout_marginBottom="10dp" />
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👨 Male Voice"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#FFF"
+            android:layout_marginBottom="10dp" />
+
+        <RadioButton
+            android:id="@+id/radioNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="😊 Normal Voice"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#FFF"
+            android:checked="true" />
+
+    </RadioGroup>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶️ START VOICE CHANGER"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#4CAF50"
+        android:padding="20dp"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏹️ STOP VOICE CHANGER"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#F44336"
+        android:padding="20dp"
+        android:enabled="false"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Instructions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📞 How to use:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Select voice effect\n2. Tap START\n3. Make or receive phone call\n4. Your voice will be changed in real-time!"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:lineSpacingExtra="5dp" />
+
+</LinearLayout>

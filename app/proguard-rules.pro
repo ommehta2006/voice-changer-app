@@ -1,0 +1,2 @@
+-keep class com.voicechanger.** { *; }
+-dontwarn com.voicechanger.**
